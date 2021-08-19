@@ -12,7 +12,7 @@ class CardProject extends Component {
         <br/>
         <p>{ description }</p>
         <br/>
-        <h3>Tectnologias utilizadas</h3>
+        <h3>Tecnologias utilizadas</h3>
         <br/>
           <ul>
             {tecs && tecs.map((tec) => <li>{tec}</li>)}
