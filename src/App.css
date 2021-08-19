@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #282c34;
+}
+
+#root {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-header {
+  font-family: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@642&display=swap');
+  background-color: #122d38;
+  min-height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  color: white;
+}
+
+.home-footer {
+  font-family: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@642&display=swap');
+  background-color: #122d38;
+  min-height: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 15px;
+  color: white;
+  width:100%;
+  margin-top: auto;
+}
+
+.navegacao {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foto_perfil {
+  border-radius: 200px;
+  border: 15px solid #122d38;
+  max-width: 330px;
+}
+
+#name {
+  font-family: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@642;700&display=swap');
+  color: white;
+  font-size: 60px;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.infos {
+  font-family: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@642&display=swap');
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+nav svg {
+  font-size: 30px;
+}
+
+.descripton {
+  font-family: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@642&display=swap');
+  color: white;
+  font-size: 20px;
+  max-width: 1000px;
+  text-align: center;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.habilidades {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+
+.habilidades_title {
+  margin-top: 150px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+#hard_skills {
+  color:rgb(220,70,83);
+  font-size: 25px;
+}
+
+#soft_skills {
+  color:rgb(51,171,221);
+  font-size: 25px;
+}
+
+#link_trybe {
+  text-decoration: none;
+  color: rgb(47,193,140);
+}
+
+.em_breve {
+  color: rgb(233, 66, 36);
+  text-align: center;
+}
+
+.paragrafos_descricao {
+  margin-top: 15px;
+}
+
+.cardProject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #122d38;
+  max-width: 500px;
+  max-height: 700px;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 20px;
+  background-color: #122d38;
+  color: white;
+}
+
+.cardProject a {
+  color: white
+}
+.cardProject li {
+  list-style: none;
+}
+
+#imagem_projeto {
+  max-height: 150px;
+  max-width: 250px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 2000rem;
+}
+
+.mensagem {
+  color: white;
+  padding: 30px;
+}
+
+.paginaProjetos {
+  text-align: center;
+}
