@@ -10,9 +10,9 @@ class Header extends Component {
       <header className="home-header">
         <Navegation />
         <nav>
-          <Link className='navegacao' to="/">Home</Link>
+          <Link className='navegacao' to="/">Inicio</Link>
           <span>|</span>
-          <Link className='navegacao' to="/projects">Projects</Link>
+          <Link className='navegacao' to="/projects">Projetos</Link>
         </nav>
       </header>
       </div>

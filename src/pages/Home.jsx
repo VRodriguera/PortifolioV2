@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import Foto from '../Pictures/FotoPerfil.jpeg';
 import Habilidades from '../Components/Habilidades';
+import Aos from 'aos';
 
 class Home extends React.Component {
   constructor(props) {
@@ -19,7 +20,8 @@ class Home extends React.Component {
         ' RTL',
         ' TDD',
         ' MySQL',
-        ' MongoDB'
+        ' MongoDB',
+        ' NodeJS'
       ],
       softSkills: [
         ' Comunicação',
@@ -32,10 +34,15 @@ class Home extends React.Component {
         ' Pensamento Critico',
         ' Tomada de decisão',
         ' Criatividade',
-        ' Curiosidade'
+        ' Curiosidade',
+        ' liderança'
       ]
     }
   }
+
+  componentDidMount() {
+    Aos.init({ duration: 2000 });
+  };
 
   render() {
     const { hardSkills, softSkills } = this.state;
@@ -54,7 +61,7 @@ class Home extends React.Component {
           </section>
           <img src={Foto} alt="Foto de Perfil" className='foto_perfil' />
         </section>
-        <section className="descripton">
+        <section className="descripton" data-aos="fade-down" data-aos-delay="500">
           <h2>descrição</h2>
           <p className="paragrafos_descricao">
             Meu nome é Vinicius Rodrigues, tenho 21 anos sou natural de Curitiba PR,
@@ -81,7 +88,7 @@ class Home extends React.Component {
         <div className='habilidades_title'>
           <h2>habilidades</h2>
         </div>
-        <section className='habilidades'>
+        <section data-aos="fade-down" data-aos-delay="700" className='habilidades'>
           <section>
             <h1 id='hard_skills'>hard skills</h1>
             {hardSkills.map((hardSkill) => <Habilidades skill={hardSkill} />)}
